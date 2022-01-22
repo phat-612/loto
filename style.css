@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  color: burlywood;
+  font-size: 60px;
+}
+.ctrl {
+  display: flex;
+  justify-content: center;
+}
+.ctrl button {
+  padding: 24px;
+  color: black;
+  font-size: 24px;
+  min-width: 150px;
+  background-color: rgb(77, 219, 196);
+}
+button + button {
+  margin-left: 24px;
+}
+
+#left {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* con lo to */
+p {
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(216, 59, 216);
+  font-size: 40px;
+  padding: 8px;
+  min-width: 70px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 16px;
+}
