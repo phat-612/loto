@@ -3,8 +3,17 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.ctrl {
+  text-align: center;
+}
+button {
+  min-width: 100px;
+  min-height: 40px;
+  font-size: 23px;
+}
 #khung {
   margin: auto;
+  margin-top: 24px;
   width: 540px;
   height: 675px;
   display: flex;
@@ -15,12 +24,8 @@
 p {
   width: 60px;
   height: 75px;
-  background-color: rgb(107, 107, 230);
   display: inline-block;
   border: 1px solid black;
   line-height: 75px;
   font-size: 40px;
-}
-p:active {
-  background-color: green;
 }

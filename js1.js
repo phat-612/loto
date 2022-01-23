@@ -3,6 +3,14 @@ var fullPick = [];
 for (var i = 1; i < 90; i++) {
   fullPick.push(i);
 }
+
+// thêm màu cho giấy
+var mauNen = rdColor();
+for (var i = 0; i < 81; i++) {
+  tagP[i].style.backgroundColor = mauNen;
+}
+
+// tạo ra số
 for (var i = 0; i < 9; i++) {
   var count = 0;
   var j = 0;
@@ -22,6 +30,7 @@ for (var i = 0; i < 9; i++) {
     }
   }
 }
+
 function rdColor() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   var xuat = "#" + randomColor;
