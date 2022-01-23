@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#khung {
+  margin: auto;
+  width: 540px;
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+p {
+  width: 60px;
+  height: 75px;
+  background-color: rgb(107, 107, 230);
+  display: inline-block;
+  border: 1px solid black;
+  line-height: 75px;
+  font-size: 40px;
+}
+p:active {
+  background-color: green;
+}
