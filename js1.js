@@ -31,6 +31,23 @@ for (var i = 0; i < 9; i++) {
   }
 }
 
+// click đổi màu
+var update = document.getElementsByTagName("p");
+for (var i = 0; i < update.length; ++i) {
+  update[i].onclick = function () {
+    if (this.innerHTML != "" && this.style.backgroundColor != "black") {
+      this.style.backgroundColor = "black";
+      this.style.color = "yellow";
+    } else {
+      if (this.innerHTML != "") {
+        this.style.backgroundColor = "#fff";
+        this.style.color = "black";
+      }
+    }
+  };
+}
+
+// hàm
 function rdColor() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   var xuat = "#" + randomColor;

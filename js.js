@@ -15,13 +15,17 @@ function vanmoi() {
   myNode.innerHTML = "";
 }
 function pick() {
-  var index = Math.floor(Math.random() * fullPick.length);
-  var newItem = document.createElement("p");
-  var textnode = document.createTextNode(fullPick[index]);
-  newItem.appendChild(textnode);
-  var list = document.getElementById("left");
-  list.insertBefore(newItem, list.childNodes[0]);
-  fullPick.splice(index, 1);
+  if (fullPick.length > 0) {
+    var index = Math.floor(Math.random() * fullPick.length);
+    var newItem = document.createElement("p");
+    var textnode = document.createTextNode(fullPick[index]);
+    newItem.appendChild(textnode);
+    var list = document.getElementById("left");
+    list.insertBefore(newItem, list.childNodes[0]);
+    fullPick.splice(index, 1);
+  } else {
+    alert("Đã hết số <-_->");
+  }
 }
 function getGiay() {
   var win = window.open("vedo.html", "_blank");
