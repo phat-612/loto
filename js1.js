@@ -21,8 +21,14 @@ for (var i = 0; i < 9; i++) {
     if (count == 5) {
       break;
     }
-    var check = Math.random() < 0.5 + 0.1 * count;
-    if (check && tagP[i + j * 9].innerHTML == "") {
+    var checkCol = 0;
+    for (var k = 0; k <= i; k++) {
+      if (tagP[j * 9 + k].innerHTML != "") {
+        checkCol++;
+      }
+    }
+    var check = Math.random() < 0.5 - 0.099 * checkCol;
+    if (check && tagP[i + j * 9].innerHTML == "" && checkCol < 6) {
       tagP[i + j * 9].innerHTML = pick(j * 10 + 1);
       tagP[i + j * 9].style.backgroundColor = "#fff";
       count++;

@@ -12,7 +12,7 @@ button {
   font-size: 23px;
 }
 #time {
-  margin: auto;
+  position: relative;
 }
 #khung {
   margin: auto;
