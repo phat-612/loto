@@ -11,6 +11,9 @@ button {
   min-height: 40px;
   font-size: 23px;
 }
+#time {
+  margin: auto;
+}
 #khung {
   margin: auto;
   margin-top: 24px;

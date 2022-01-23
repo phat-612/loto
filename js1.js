@@ -10,6 +10,9 @@ for (var i = 0; i < 81; i++) {
   tagP[i].style.backgroundColor = mauNen;
 }
 
+// thêm thời gian khởi tạo
+setTime();
+
 // tạo ra số
 for (var i = 0; i < 9; i++) {
   var count = 0;
@@ -48,6 +51,11 @@ for (var i = 0; i < update.length; ++i) {
 }
 
 // hàm
+function setTime() {
+  var time = new Date();
+  var noww = time.toLocaleTimeString();
+  document.getElementById("time").innerHTML = noww;
+}
 function rdColor() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   var xuat = "#" + randomColor;
