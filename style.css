@@ -2,10 +2,16 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .header {
   text-align: center;
-  color: burlywood;
+  color: #ff6233;
   font-size: 60px;
 }
 .ctrl {
