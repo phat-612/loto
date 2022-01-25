@@ -7,17 +7,22 @@ for (var i = 1; i < 90; i++) {
 }
 
 function vanmoi() {
-  fullPick = [];
-  for (var i = 1; i < 90; i++) {
-    fullPick.push(i);
+  var checkNew = confirm("Bạn muốn chơi ván mới <>");
+  console.log(checkNew);
+  if (checkNew) {
+    fullPick = [];
+    for (var i = 1; i < 90; i++) {
+      fullPick.push(i);
+    }
+    const myNode = document.getElementById("left");
+    myNode.innerHTML = "";
   }
-  const myNode = document.getElementById("left");
-  myNode.innerHTML = "";
 }
 function pick() {
   if (fullPick.length > 0) {
     var index = Math.floor(Math.random() * fullPick.length);
     var newItem = document.createElement("p");
+    newItem.style.background = "black";
     var textnode = document.createTextNode(fullPick[index]);
     newItem.appendChild(textnode);
     var list = document.getElementById("left");
